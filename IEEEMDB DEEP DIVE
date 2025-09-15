@@ -1,0 +1,34 @@
+## my non functional  requirements 
+1- security 
+2- consistency , latency 
+3-scalability 
+4- availability 
+
+### my choices 
+1- microservice 
+````
+a web site with that type of functionality must be easy to expand and maintain + there will be alot of active user to i choose the microservice so i can maintain maintainbility and expandability of my system
+````
+
+2- sql
+``` 
+in my system the core entites of it have a complex realtion ships with each other so join statement will be used alot and i wanna maintain consistency of the ratings so i will chose sql espicially postgres sql as it can handle huge number of transaction 
+```
+
+## scalability 
+**in holidays** the ratings system will have huge number of active user that wanna a good movie to watch so  i added load balancer and stand by load balancer and 3 read replicas so it can handle alot of read or get  operation and i sync the 3 read replica with the main Db every 10 minutes (it can be adjusted ) i choosed 10 minutes as it will be a good tradeoff between consistency and latency if we assumed 3 million user 500 k active user daily so wee need to sync every 10 minute in 24 hours that 144 times synces  thats  a good gab for commenting or rating 
+
+# availability 
+i added standby load balancer and stand by Db for movies for huge traffic that can cause the web to fail over ( maybe this can be remodeled in the estimation stage )
+
+
+
+# security 
+i added authtication sys 
+and i sperated entities as possible 
+
+
+# latency 
+i added redis cash to the movie service so it can minimize the latency in getting to a movie page 
+
+
