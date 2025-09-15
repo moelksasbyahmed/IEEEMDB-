@@ -17,10 +17,10 @@ The project demonstrates how to manage movie entries, including details such as 
 
 
 # deep dive file 
-[deep_dive](./IEEEMDB DEEP DIVE)
+[deep_dive](https://github.com/moelksasbyahmed/IEEEMDB-/blob/5bef622f99999f6ad5ebb947034a43c5bd3eee5c/IEEEMDB%20DEEP%20DIVE)
 
 #EXCALIDRAW FILE 
-[SYS DESIGN ](./ieeemdb sys design .excalidraw)
+[SYS DESIGN ](https://github.com/moelksasbyahmed/IEEEMDB-/blob/5bef622f99999f6ad5ebb947034a43c5bd3eee5c/ieeemdb%20sys%20design%20.excalidraw)
 ## Purpose
 
 This demo project is ideal for students, developers, and anyone interested in learning how movie database systems work. It serves as a practical example for understanding CRUD operations, data storage, and application architecture in the context of a real-world scenario.
